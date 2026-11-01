@@ -78,8 +78,37 @@ h1, h2, h3, h4, h5, h6 {
     gap: 30px;
 }
 
+.sidebar-header img{
+  width: auto;
+  height: 40px;
+}
+.sidebar-header{
+  font-size: 32px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar>div>div img{
+  width: auto;
+  height: 20px;
+}
+
+.sidebar>div>div{
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
 .main-content{
     background-color: grey;
     grid-column: 2;
     grid-row: 2;
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.project-section{
+    grid-row: 1 / span 2;
 }
