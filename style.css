@@ -88,12 +88,20 @@ h6 {
   isolation: isolate;
 }
 
+@font-face {
+    font-family: 'Inter';
+    src: url('assets/fonts/Inter-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 .container {
   display: grid;
   height: 100vh;
   width: 100vw;
   grid-template: 1fr 4fr / 1fr 5fr;
+  font-family: 'Inter';
 }
 
 .header,.card,.announcement-container,.trending-container{
@@ -138,6 +146,7 @@ input[type="search"] {
   flex:1;
   min-height: min-content;
   align-self: start;
+  padding-left: 10px;
 }
 
 .user-controls{
@@ -278,6 +287,10 @@ input[type="search"] {
   justify-content: space-between;
   border-radius: 8px;
   padding: 20px;
+}
+
+.card>span{
+  font-weight: 600;
 }
 
 .icon-holder{
