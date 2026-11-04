@@ -96,8 +96,20 @@ h6 {
   grid-template: 1fr 4fr / 1fr 5fr;
 }
 
+.header,.card,.announcement-container,.trending-container{
+  background-color: #edf6f9;
+}
+
+.main-content,input[type="search"]{
+  background-color: #83c5be;
+}
+
+.sidebar, button{
+  background-color: #006d77;
+  color:#edf6f9
+}
+
 .header {
-  background-color: white;
   grid-column: 2;
   display: grid;
   grid-template-columns: 6fr 4fr;
@@ -121,7 +133,6 @@ h6 {
 }
 
 input[type="search"] {
-  background-color: grey;
   border-radius: 12px;
   width: max-content;
   flex:1;
@@ -186,12 +197,10 @@ input[type="search"] {
   width:90px;
   min-width: fit-content;
   height: 35px;
-  background-color: cyan;
   border-radius: 20px;
 }
 
 .sidebar {
-  background-color: aqua;
   grid-column: 1;
   grid-row: 1 / -1;
   display: grid;
@@ -233,7 +242,6 @@ input[type="search"] {
 }
 
 .main-content {
-  background-color: grey;
   grid-column: 2;
   grid-row: 2;
   display: grid;
@@ -264,7 +272,6 @@ input[type="search"] {
   flex-direction: column;
   width: 400px;
   height: 170px;
-  background-color: white;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -297,7 +304,6 @@ input[type="search"] {
   height: 250px;
   display: flex;
   flex-direction: column;
-  background-color: white;
   flex-grow: 1;
   margin-top: 10px;
   gap:5px;
@@ -329,7 +335,6 @@ input[type="search"] {
 }
 
 .trending-container{
-  background-color: white;
   display: flex;
   flex-direction: column;
   height: 250px;
