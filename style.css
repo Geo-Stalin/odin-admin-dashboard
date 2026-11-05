@@ -264,7 +264,7 @@ input[type="search"] {
   grid-column: 2;
   grid-row: 2;
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 1fr);
   grid-template-rows: 1fr 1fr;
   padding: 15px;
 }
@@ -292,7 +292,7 @@ input[type="search"] {
   flex-direction: column;
   width: 400px;
   height: 170px;
-  white-space: nowrap;
+  white-space: normal;
   overflow: hidden;
   text-overflow: ellipsis;
   justify-content: space-between;
@@ -339,7 +339,7 @@ input[type="search"] {
 }
 
 .announcement-container>div {
-  white-space: nowrap;
+  white-space: normal;
   overflow: hidden;
   text-overflow: ellipsis;
   height: 70px;
